@@ -30,7 +30,7 @@ const EVENTS = [
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <FilterableEventList events={EVENTS}/>
       </div>
     );

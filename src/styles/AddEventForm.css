@@ -1,0 +1,7 @@
+.add-event-form {
+  text-align: center;
+}
+
+.add-event-form * {
+  margin: 0.5em 0;
+}

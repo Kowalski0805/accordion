@@ -1,0 +1,9 @@
+.event-list {
+  margin: 2rem 0;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+}
+
+.event-list .event-card:last-child .event-body {
+  border-radius: 0 0 2rem 2rem;
+}

@@ -1,0 +1,26 @@
+.add-event-modal {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  max-width: 270px;
+  box-shadow: 2px 2px 2px #ccc;
+  display: none;
+}
+
+.add-event-modal .close {
+  width: 1.3em;
+  height: 1.3em;
+  padding: 0;
+  font-size: 1.3em;
+  border-radius: 1em;
+  top: -0.2em;
+  right: -0.2em;
+  position: absolute;
+}
+
+.add-event-modal .title {
+  margin-top: 0;
+  text-align: center;
+}
