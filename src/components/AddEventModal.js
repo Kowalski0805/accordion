@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { toggleModal } from '../actions';
 import AddEventForm from './AddEventForm';
 import '../styles/AddEventModal.css';
 
-class AddEventModal extends Component {
-  render() {
-    return (
-      <div className="add-event-modal">
-        <button className="close">&times;</button>
-        <h2 className="title">Add event</h2>
-        <AddEventForm />
-      </div>
-    );
-  }
-}
+const AddEventModal = ({ shown, onCloseClick }) => shown ? (
+  <div className="add-event-modal">
+    <button className="close" onClick={onCloseClick}>&times;</button>
+    <h2 className="title">Add event</h2>
+    <AddEventForm />
+  </div>
+) : null;
 
-export default AddEventModal;
+const mapStateToProps = state => ({ shown: state.shownModal });
+const mapDispatchToProps = dispatch => ({ onCloseClick: () => dispatch(toggleModal()) });
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddEventModal);

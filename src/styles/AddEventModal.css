@@ -6,7 +6,6 @@
   border-radius: 2rem;
   max-width: 270px;
   box-shadow: 2px 2px 2px #ccc;
-  display: none;
 }
 
 .add-event-modal .close {

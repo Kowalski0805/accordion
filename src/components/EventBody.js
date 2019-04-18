@@ -6,8 +6,8 @@ class EventBody extends Component {
   render() {
     return (
       <div className="event-body">
-        { this.props.feeds.map(feed => (
-          <EventFeed text={feed.text} source={feed.source}/>
+        { this.props.feeds.map((feed, i) => (
+          <EventFeed text={feed.text} source={feed.source} key={i}/>
         )) }
       </div>
     );

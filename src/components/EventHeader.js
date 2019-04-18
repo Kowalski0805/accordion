@@ -4,7 +4,7 @@ import '../styles/EventHeader.css';
 class EventHeader extends Component {
   render() {
     return (
-      <div className="event-header">
+      <div className="event-header" onClick={this.props.onEventClick}>
         <div className="title">
           <h3>{this.props.name}</h3>
         </div>

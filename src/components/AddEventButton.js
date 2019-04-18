@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import { toggleModal } from '../actions';
 
-class AddEventButton extends Component {
-  render() {
-    return (
-      <button>Add</button>
-    );
-  }
-}
+const AddEventButton = ({ onButtonClick }) => (
+  <button onClick={onButtonClick}>Add</button>
+);
 
-export default AddEventButton;
+const mapDispatchToProps = dispatch => ({ onButtonClick: () => dispatch(toggleModal()) });
+
+export default connect(null, mapDispatchToProps)(AddEventButton);

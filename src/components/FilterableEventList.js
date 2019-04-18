@@ -10,7 +10,7 @@ class FilterableEventList extends Component {
         <h1>Events</h1>
         <AddEventContainer />
         <SearchBar />
-        <EventList events={this.props.events} />
+        <EventList />
       </div>
     );
   }
